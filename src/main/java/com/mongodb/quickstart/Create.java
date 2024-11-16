@@ -24,6 +24,8 @@ public class Create {
 
             insertOneDocument(gradesCollection);
             insertManyDocuments(gradesCollection);
+            gradesCollection.insertOne(generateNewGrade(10420d, 1d));
+            System.out.println("One grade inserted for studentId 10420.");
         }
     }
 
